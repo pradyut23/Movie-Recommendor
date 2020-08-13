@@ -2,18 +2,20 @@ import streamlit as st
 from recommendor import recommendor
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
-st.markdown('<style>body{background-image: url("https://i.redd.it/4fxxbm4opjd31.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;} body::before{content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background-color: rgba(1,1,1,0.95);}</style>',unsafe_allow_html=True)
-st.markdown('<style>body{color: #B3B6B7 ; text-align: center;}</style>',unsafe_allow_html=True)
+st.markdown('<style>body{background-image: url("https://i.redd.it/4fxxbm4opjd31.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;} body::before{content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background-color: rgba(1,1,1,0.80);}</style>',unsafe_allow_html=True)
+st.markdown('<style>body{color: white ; text-align: center;}</style>',unsafe_allow_html=True)
 
 st.title("MOVIE RECOMMENDOR")
 st.write("")
-st.subheader("Content Based Recommendor System")
-st.write("The system recommends movies on the basis of your likeness of a particular genre")
+st.header("Content Based Recommendor System")
+st.subheader("The system recommends movies on the basis of your liking and disliking of a particular genre")
+st.write("")
+st.write("")
+st.write("Enter some movie names and rating (both likes and dislikes) in the side panel.")
 st.write("")
 st.write("")
 st.write("")
 
-st.sidebar.header("Enter movie name and rating")
 st.sidebar.markdown("")
 
 userLikes=[]
@@ -28,10 +30,6 @@ while i<n:
     userLikes.append(movies)
     i+=1
 
-st.sidebar.markdown("")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
 st.sidebar.markdown("")
 st.sidebar.markdown("")
 year=st.sidebar.text_input("Do you want movies after a specific year, if yes, mention the year?",value=1900)
