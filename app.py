@@ -1,5 +1,5 @@
 import streamlit as st
-#from recommendor import recommendor
+from recommendor import recommendor
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 st.markdown('<style>body{background-image: url("https://i.redd.it/4fxxbm4opjd31.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;} body::before{content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background-color: rgba(1,1,1,0.95);}</style>',unsafe_allow_html=True)
