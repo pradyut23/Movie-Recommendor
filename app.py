@@ -8,7 +8,7 @@ st.markdown('<style>body{color: white ; text-align: center;}</style>',unsafe_all
 st.title("MOVIE RECOMMENDOR")
 st.write("")
 st.header("Content Based Recommendor System")
-st.subheader("The system recommends movies on the basis of your liking and disliking of a particular genre")
+st.write("The system recommends movies on the basis of your liking and disliking of a particular genre")
 st.write("")
 st.write("")
 st.write("Enter some movie names and rating (both likes and dislikes) in the side panel.")
